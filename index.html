@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Syed Anees — Product Designer</title>
+<meta name="description" content="Syed Anees is a Lead Product Designer with 12 years turning ambiguous, expensive problems into shipped systems — 0-to-1 products, enterprise SaaS, AI-assisted workflows and CX platforms.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <span class="nav__pip" id="pip" aria-hidden="true"></span>
+  <a class="nav__item" href="#hero" aria-current="page">Syan</a>
+  <a class="nav__item" href="#work">Work</a>
+  <a class="nav__item" href="#about">About</a>
+  <a class="nav__item" href="#contact">Contact</a>
+</nav>
+
+<main id="main">
+
+  <header class="hero" id="hero">
+    <div class="notes notes--back" id="notesBack" aria-hidden="true"></div>
+
+    <h1 class="hl">
+      <span class="hl__line">I&rsquo;m
+        <span class="pill" id="pill" role="button" tabindex="0" aria-label="Syed Anees">
+          <span class="pill__clip"><img class="pill__photo" src="assets/img/me.png" alt="Syed Anees"></span>
+          <span class="pill__name">Syed Anees</span>
+          <svg class="pill__arrow" viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M6 4C30 10 58 34 70 78"/>
+            <path d="M52 66 70 80 80 60"/>
+          </svg>
+        </span>
+        a product designer<span class="badge" id="badge" role="button" tabindex="0" aria-label="12 years of experience">
+          <svg class="badge__star" viewBox="0 0 100 100" aria-hidden="true"><path id="starPath"/></svg>
+          <span class="badge__xp">12<br>XP</span>
+          <span class="badge__tags" id="tags"></span>
+        </span>
+      </span>
+      <span class="hl__line">And I make expensive problems <span class="trigger" id="trigger" tabindex="0" role="button" aria-label="Make the problems disappear">disappear</span>.</span>
+    </h1>
+
+    <div class="notes notes--front" id="notesFront" aria-hidden="true"></div>
+  </header>
+
+  <section class="work" id="work">
+    <div class="work__intro reveal">
+      <p class="work__eyebrow">Selected work</p>
+      <h2 class="work__title">Two systems, shipped</h2>
+      <p class="work__note">Deep dives, not a wall of thumbnails — the problem, the routes I tried, what shipped, and what moved because of it.</p>
+    </div>
+
+    <!-- Case study 01 — Freshworks omni-channel framework -->
+    <article class="case" aria-labelledby="case1-title">
+      <div class="case__crumb">Freshworks · Twenty25 · Shipped March 2025</div>
+      <div class="case__head">
+        <h3 class="case__title" id="case1-title">Build an omni-channel framework for customer support</h3>
+        <p class="case__subtitle">Chat, mail, voice and social in one place — so agents stop juggling six tabs per ticket.</p>
+        <p class="case__tags">Framework · Strategy · Orchestration</p>
+      </div>
+
+      <div class="case__body">
+        <aside class="case__facts">
+          <dl>
+            <div class="fact"><dt>Role</dt><dd>Lead Product Designer</dd></div>
+            <div class="fact"><dt>Team</dt><dd>4 designers · 20 engineers</dd></div>
+            <div class="fact"><dt>Shipped</dt><dd>March 2025</dd></div>
+            <div class="fact"><dt>Read</dt><dd>12 min</dd></div>
+          </dl>
+          <div class="tldr">
+            <p class="tldr__label">TL;DR</p>
+            <ul>
+              <li>Six tools → one desk</li>
+              <li>38% faster first reply</li>
+              <li>Live with 4,000 agents</li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="case__read">
+          <div class="case__section">
+            <h3>Context</h3>
+            <p>Freshworks' support suite had grown one channel at a time. Chat, email, voice, social and the knowledge base each had their own inbox, their own rules, and their own idea of what a conversation was.</p>
+            <p>I led design for the framework that pulled them together, working with 4 designers and 20 engineers across multiple regions, from discovery through rollout.</p>
+          </div>
+
+          <div class="case__section">
+            <h3>The problem</h3>
+            <p>We shadowed agents over several weeks. A single refund question moved through six tools before anyone replied, and the average ticket touched six tabs. Agents were not slow — the desk was.</p>
+          </div>
+
+          <div class="case__section">
+            <h3>Explorations — four routes, one shipped</h3>
+            <div class="routes">
+              <div class="route">
+                <div class="route__head"><span class="route__name">Split inbox</span><span class="route__verdict">Parked</span></div>
+                <p>One pane per channel. Quick to build, but agents still carried the context across panes themselves.</p>
+              </div>
+              <div class="route" data-shipped="true">
+                <div class="route__head"><span class="route__name">Threaded</span><span class="route__verdict">Shipped</span></div>
+                <p>Every channel folded into one customer thread. Won on comprehension; we paid for it in density and had to earn the space back.</p>
+              </div>
+              <div class="route">
+                <div class="route__head"><span class="route__name">Queue-first</span><span class="route__verdict">Parked</span></div>
+                <p>Work the queue, never the inbox. Strong for high-volume teams, weak for named accounts that expect a relationship.</p>
+              </div>
+              <div class="route">
+                <div class="route__head"><span class="route__name">Agent copilot</span><span class="route__verdict">Phase two</span></div>
+                <p>Drafts and summaries beside the reply box. Held back until answer quality scored above target in testing.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="case__section">
+            <h3>What shipped</h3>
+            <p>One conversation object behind every channel, a routing model teams can edit themselves, and an agent desk where history, macros and automation sit beside the reply box instead of behind it.</p>
+          </div>
+
+          <div class="case__section">
+            <h3>Outcome</h3>
+            <div class="metrics">
+              <div class="metric"><span class="metric__num">38%</span><span class="metric__label">Faster first reply</span></div>
+              <div class="metric"><span class="metric__num">6→1</span><span class="metric__label">Tools per ticket</span></div>
+              <div class="metric"><span class="metric__num">4K</span><span class="metric__label">Agents live</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Case study 02 — Reply Suggester / AI agent productivity (draft skeleton, awaiting real content) -->
+    <article class="case" aria-labelledby="case2-title">
+      <div class="case__crumb">
+        Freshworks · AI features
+        <span class="draft-flag">Draft — replace with real details</span>
+      </div>
+      <div class="case__head">
+        <h3 class="case__title" id="case2-title">Boosting agent productivity with AI</h3>
+        <p class="case__subtitle">[One-line subtitle — what the AI reply-suggestion feature does, and why it mattered.]</p>
+        <p class="case__tags">AI · Reply Suggester · [Add a third tag]</p>
+      </div>
+
+      <div class="case__body">
+        <aside class="case__facts">
+          <dl>
+            <div class="fact"><dt>Role</dt><dd>[Your role]</dd></div>
+            <div class="fact"><dt>Team</dt><dd>[Team composition]</dd></div>
+            <div class="fact"><dt>Shipped</dt><dd>[Month, year]</dd></div>
+            <div class="fact"><dt>Read</dt><dd>[X] min</dd></div>
+          </dl>
+          <div class="tldr">
+            <p class="tldr__label">TL;DR</p>
+            <ul>
+              <li>[Headline outcome]</li>
+              <li>[Metric #1]</li>
+              <li>[Metric #2]</li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="case__read">
+          <div class="case__section">
+            <h3>Context</h3>
+            <div class="draft-block">
+              <span class="draft-label">Needs your input</span>
+              <p>[2–3 sentences: what were agents doing before this feature existed, and why did it matter to the business?]</p>
+            </div>
+          </div>
+
+          <div class="case__section">
+            <h3>The problem</h3>
+            <div class="draft-block">
+              <span class="draft-label">Needs your input</span>
+              <p>[What was slow, inconsistent, or costly about writing replies by hand? A number here helps — average handle time, reply quality variance, etc.]</p>
+            </div>
+          </div>
+
+          <div class="case__section">
+            <h3>Explorations</h3>
+            <div class="draft-block">
+              <span class="draft-label">Needs your input</span>
+              <p>[Which approaches did you try — full auto-send, suggest-and-edit, tone controls, macro blending? What shipped, and why?]</p>
+            </div>
+          </div>
+
+          <div class="case__section">
+            <h3>What shipped</h3>
+            <div class="draft-block">
+              <span class="draft-label">Needs your input</span>
+              <p>[Describe the final feature: where it lives in the agent desk, how a suggestion is generated, what control the agent keeps.]</p>
+            </div>
+          </div>
+
+          <div class="case__section">
+            <h3>Outcome</h3>
+            <div class="metrics">
+              <div class="metric"><span class="metric__num">[00]%</span><span class="metric__label">[Metric label]</span></div>
+              <div class="metric"><span class="metric__num">[00]%</span><span class="metric__label">[Metric label]</span></div>
+              <div class="metric"><span class="metric__num">[0,000]</span><span class="metric__label">[Metric label]</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about__wrap reveal">
+      <div class="about__photo"><img src="assets/img/me.png" alt="Syed Anees"></div>
+      <div>
+        <p class="about__eyebrow">About</p>
+        <h2 class="about__title">12 years of turning ambiguity into shipped systems</h2>
+        <p>I'm a Lead Product Designer at Freshworks, where I work on the frameworks and desks that support agents rely on every day — the kind of problems that don't have a single obvious answer, and that are expensive to get wrong.</p>
+        <p>I'm drawn to 0-to-1 work: naming the actual problem, testing a handful of real directions instead of one polished guess, and shipping something a team can keep building on. Lately that's meant orchestration systems, AI-assisted workflows, and the connective tissue between them.</p>
+        <div class="about__focus">
+          <span class="focus-chip">Systems</span>
+          <span class="focus-chip">AI</span>
+          <span class="focus-chip">SaaS</span>
+          <span class="focus-chip">CX</span>
+          <span class="focus-chip">Enterprise</span>
+          <span class="focus-chip">0 → 1</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="reveal">
+      <p class="contact__eyebrow">Get in touch</p>
+      <h2 class="contact__title">Got an expensive problem? Let's make it disappear.</h2>
+      <div class="contact__links">
+        <a class="contact__link is-placeholder" href="mailto:your-email@example.com">[your-email@example.com]</a>
+        <a class="contact__link is-placeholder" href="#" rel="noopener">[linkedin.com/in/your-handle]</a>
+        <a class="contact__link is-placeholder" href="#" rel="noopener">[Download résumé]</a>
+      </div>
+    </div>
+    <div class="footer">
+      <span>© 2026 Syed Anees</span>
+      <span>[Your city, country] — open to [remote / relocation, as applicable]</span>
+    </div>
+  </section>
+
+</main>
+
+<div class="hint" id="hint">
+  <span>Hover the <b>pill</b>, the <b>badge</b>, the word <b>disappear</b> &mdash; sweep past a note, then scroll</span>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
