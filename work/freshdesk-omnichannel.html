@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freshdesk Omni-Channel Framework, Syed Anees</title>
+<meta name="description" content="A Staff-level case study on unifying fragmented channel experiences into a scalable design system at Freshworks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="wordmark">
+    <span class="short">SyAn</span><span class="full">Syed Anees</span>
+    <span class="role"> &middot; Product Designer</span>
+  </a>
+  <nav class="site-nav">
+    <a href="../index.html#work"><span class="nav-label">Selected</span> Work</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="case-header wrap">
+    <a href="../index.html#work" class="back">&larr; Back to selected work</a>
+    <h1>Freshdesk Omni-Channel Framework</h1>
+    <div class="case-meta">
+      <div><div class="label">Role</div><div class="value">Lead Product Designer</div></div>
+      <div><div class="label">Company</div><div class="value">Freshworks</div></div>
+      <div><div class="label">Timeline</div><div class="value">2024&ndash;2025</div></div>
+      <div><div class="label">Status</div><div class="value">Shipped</div></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="case-body">
+
+      <h2>Choosing the problem</h2>
+      <p>The brief I was handed was to bring live channels, WhatsApp, Facebook and Instagram, into Freshdesk. That's a feature-parity ask, and I treated it as a hypothesis, not a spec.</p>
+      <p>I ran a diagnostic instead of a status update: customer interviews with agents and team leads, a direct audit of what native apps support that Freshdesk couldn't render, a UX audit of every existing channel, a gap analysis against what live-channel support requires, and a competitive teardown against Zendesk, Intercom and Sprout Social.</p>
+      <p>The stated problem was "missing features." The audit data pointed somewhere else: every channel already in Freshdesk had been designed in isolation, with no shared contract between them. Feature parity would have added a fourth inconsistent channel to three inconsistent ones already live. The actual problem was structural: there was no definition of what "a channel in Freshdesk" should be, so nothing could scale.</p>
+
+      <blockquote class="pull">"We prefer Freshchat's channel switching experience but most of the tickets assigned to us are in Freshdesk." &mdash; Agent, customer interview</blockquote>
+      <blockquote class="pull">"Managing two different tools for the same account feels inefficient. I just want one place to set up channels and track results." &mdash; Admin, customer interview</blockquote>
+
+      <p>Agents had already experienced a good version of this, just in the wrong product. Admins were paying a duplicate-setup tax for the same reason. The goal reframed again: not "design live-channel UX," but meet a bar agents already trusted and remove the admin's duplicate work, via a contract every future channel could reuse.</p>
+
+      <h2>Comparing before and after</h2>
+      <p>Placeholder comparison below, real frames to be swapped in once cleared for external sharing.</p>
+      <div class="compare">
+        <div class="pane before">Before, fragmented channel UI</div>
+        <div class="pane after">After, unified reply editor</div>
+        <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+        <span class="compare-label before-label">Before</span>
+        <span class="compare-label after-label">After</span>
+      </div>
+
+      <h2>Key decisions</h2>
+      <p><strong>One reply editor, not two.</strong> Freshdesk ran separate editors for messaging versus social channels, different behavior, different mental model per conversation type. I collapsed both into a single editor with channel-source icon and comment/DM mode switching, so "how do I reply" stopped being a channel-specific question.</p>
+      <p><strong>Two pillars, not N channel-specific designs.</strong> Instead of designing channel by channel, I split the problem into two reusable contracts: Admin Experience (pre-setup, setup, post-setup) and Agent Experience (rendering, reply behavior, switching). A new channel implements the contract; it doesn't get a new design.</p>
+      <p><strong>Ship the defensible version, name the gap.</strong> The full progressive-disclosure redesign for Facebook comment hierarchy didn't fit the release window. I shipped the readability improvements that did fit and documented the fuller version as a scoped, named follow-up, rather than block the release or ship a silently worse version.</p>
+
+      <h2>Outcome</h2>
+      <div class="metric-row">
+        <div><div class="num">5</div><div class="desc">Channels unified under one framework</div></div>
+        <div><div class="num">1 quarter</div><div class="desc">Facebook, Instagram and WhatsApp shipped together</div></div>
+        <div><div class="num">8,056+</div><div class="desc">Businesses already on the Facebook channel</div></div>
+        <div><div class="num">3</div><div class="desc">Teams unblocked by the framework: mobile, visual design, video</div></div>
+      </div>
+      <p>Mobile, visual design and video production could build against the same contract simultaneously instead of queuing behind sequential design decisions per channel.</p>
+
+      <div class="pending-note">Adoption and business-impact metrics (build time per channel, component reuse rate, CSAT by channel) are still pending from engineering, product and support ops, and are held out of this case study until verified.</div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>&copy; 2026 Syed Anees</span>
+  <a href="../index.html#contact">Get in touch</a>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
