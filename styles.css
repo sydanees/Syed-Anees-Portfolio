@@ -503,7 +503,54 @@ blockquote.pull {
 .compare-label.before-label { left: 16px; }
 .compare-label.after-label { right: 16px; }
 
+/* Preloader */
+
+body.is-preloading { overflow: hidden; }
+
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--paper);
+  opacity: 1;
+  transition: opacity 0.5s var(--ease);
+}
+
+#preloader.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#preloader p {
+  max-width: 640px;
+  font-size: clamp(20px, 3.4vw, 30px);
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--ink);
+}
+
+.preloader-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.9em;
+  margin-left: 2px;
+  background: var(--accent);
+  vertical-align: -0.1em;
+  animation: preloader-blink 0.9s step-end infinite;
+}
+
+@keyframes preloader-blink {
+  50% { opacity: 0; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  #preloader { display: none; }
+  body.is-preloading { overflow: visible; }
 }
